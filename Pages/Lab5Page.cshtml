@@ -2,23 +2,22 @@
 @model MyApp.Namespace.Lab5PageModel
 @{
 }
-</div>
-<main>
-    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Free</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>10 users included</li>
-              <li>2 GB of storage</li>
-              <li>Email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
-          </div>
-        </div>
-      </div>
+
+<form id="calculationForm">
+    <div>
+        <label for="number1">Sayı 1:</label>
+        <input type="number" id="number1" name="number1" required>
+    </div>
+    <div>
+        <label for="number2">Sayı 2:</label>
+        <input type="number" id="number2" name="number2" required>
+    </div>
+    <button type="button" id="calculateButton" style="border-radius: 50%; background-color: #007bff; color: white;">Hesapla</button>
+</form>
+
+<div id="result" style="display: none; background-color: #28a745; color: white; padding: 10px; border-radius: 5px;"></div>
+
+<script src="custom.js"></script>
+
+
+    <script src="~/js/custom.js" asp-append-version="true"></script>
